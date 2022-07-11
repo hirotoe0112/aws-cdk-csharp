@@ -14,6 +14,7 @@ namespace TestProject1
             var app = new App();
             var stack = new CdkCsharpStack(app, "test-stack");
             var template = Template.FromStack(stack);
+            template.ResourceCountIs("AWS::SNS::Topic", 1);
             template.ResourceCountIs("AWS::SNS::Subscription", 1);
         }
     }
