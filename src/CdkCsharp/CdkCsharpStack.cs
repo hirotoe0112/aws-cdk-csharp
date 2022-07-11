@@ -2,6 +2,8 @@ using Amazon.CDK;
 using Amazon.CDK.AWS.SNS;
 using Amazon.CDK.AWS.SNS.Subscriptions;
 using Constructs;
+using System.Runtime.CompilerServices;
+[assembly: InternalsVisibleTo("TestProject1")]
 
 namespace CdkCsharp
 {
